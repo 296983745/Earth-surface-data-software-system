@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.webtool.datanet.mapper.DataCatalogMapper">
+
+    <resultMap type="DataCatalog" id="DataCatalogResult">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="abstractText" column="abstract_text"/>
+        <result property="subject" column="subject"/>
+        <result property="mainWord" column="main_word"/>
+        <result property="origin" column="origin"/>
+        <result property="coordinate" column="coordinate"/>
+        <result property="url" column="url"/>
+        <result property="image" column="image"/>
+        <result property="dateTime" column="DateTime"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <resultMap type="DataCatalogStatistics" id="DataCatalogStatisticsResult">
+        <result property="count" column="count"/>
+        <result property="origin" column="origin"/>
+    </resultMap>
+
+    <sql id="selectDataCatalogVo">
+        select id,
+               name,
+               abstract_text,
+               subject,
+               main_word,
+               origin,
+               coordinate,
+               url,
+               image,
+               create_by,
+               DateTime,
+               create_time,
+               update_by,
+               update_time
+        from data_catalog
+    </sql>
+
+    <select id="selectDataCatalogList" parameterType="DataCatalog" resultMap="DataCatalogResult">
+        <include refid="selectDataCatalogVo"/>
+        <where>
+            <if test="name != null  and name != ''">and name like concat('%', #{name}, '%')</if>
+            <if test="abstractText != null  and abstractText != ''">and abstract_text = #{abstractText}</if>
+            <if test="subject != null  and subject != ''">and subject like concat('%', #{subject}, '%')</if>
+            <if test="mainWord != null  and mainWord != ''">and main_word = #{mainWord}</if>
+            <if test="origin != null  and origin != ''">and origin like concat('%', #{origin}, '%')</if>
+            <if test="coordinate != null  and coordinate != ''">and coordinate = #{coordinate}</if>
+        </where>
+    </select>
+
+    <select id="selectAll" resultMap="DataCatalogResult">
+        select id,
+               name,
+               abstract_text,
+               subject,
+               main_word,
+               origin,
+               coordinate,
+               create_by,
+               create_time,
+               update_by,
+               update_time
+        from data_catalog
+    </select>
+
+    <select id="selectDataCatalogById" parameterType="Long" resultMap="DataCatalogResult">
+        <include refid="selectDataCatalogVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectDataCatalogByName" parameterType="String" resultMap="DataCatalogResult">
+        <include refid="selectDataCatalogVo"/>
+        where name = #{name}
+    </select>
+
+    <select id="statistics" resultMap="DataCatalogStatisticsResult">
+        SELECT count(id) as count, origin
+        from data_catalog
+        GROUP BY origin
+        ORDER BY count desc
+    </select>
+    <select id="subjectStatistics" resultType="java.util.Map">
+        SELECT count(id) as value, subject as name
+        from data_catalog
+        GROUP BY subject
+        ORDER BY value desc
+    </select>
+
+    <select id="monthStatistics" resultType="java.util.Map">
+        SELECT months.month,
+               COALESCE(add_data_count, 0)    AS add_data_count,
+               COALESCE(update_data_count, 0) AS update_data_count
+        FROM (SELECT DISTINCT month
+              FROM (
+                  SELECT DATE_FORMAT(create_time, '%Y-%m') AS month
+                  FROM data_catalog
+                  WHERE create_time >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+                  UNION
+                  SELECT DATE_FORMAT(update_time, '%Y-%m') AS month
+                  FROM data_catalog
+                  WHERE update_time >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+                  ) AS all_months
+              ORDER BY month DESC
+                  LIMIT 12) AS months
+                 LEFT JOIN (SELECT DATE_FORMAT(create_time, '%Y-%m') AS month, COUNT(*) AS add_data_count
+                            FROM data_catalog
+                            WHERE create_time >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+                            GROUP BY DATE_FORMAT(create_time, '%Y-%m')) AS add_counts ON months.month = add_counts.month
+                 LEFT JOIN (SELECT DATE_FORMAT(update_time, '%Y-%m') AS month, COUNT(*) AS update_data_count
+                            FROM data_catalog
+                            WHERE update_time >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
+                            GROUP BY DATE_FORMAT(update_time, '%Y-%m')) AS update_counts
+                           ON months.month = update_counts.month
+        ORDER BY months.month;
+    </select>
+
+    <insert id="insertDataCatalog" parameterType="DataCatalog">
+        insert into data_catalog
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">id,</if>
+            <if test="name != null">name,</if>
+            <if test="abstractText != null">abstract_text,</if>
+            <if test="subject != null">subject,</if>
+            <if test="mainWord != null">main_word,</if>
+            <if test="origin != null">origin,</if>
+            <if test="coordinate != null">coordinate,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">#{id},</if>
+            <if test="name != null">#{name},</if>
+            <if test="abstractText != null">#{abstractText},</if>
+            <if test="subject != null">#{subject},</if>
+            <if test="mainWord != null">#{mainWord},</if>
+            <if test="origin != null">#{origin},</if>
+            <if test="coordinate != null">#{coordinate},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+        </trim>
+    </insert>
+
+    <update id="updateDataCatalog" parameterType="DataCatalog">
+        update data_catalog
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null">name = #{name},</if>
+            <if test="abstractText != null">abstract_text = #{abstractText},</if>
+            <if test="subject != null">subject = #{subject},</if>
+            <if test="mainWord != null">main_word = #{mainWord},</if>
+            <if test="origin != null">origin = #{origin},</if>
+            <if test="coordinate != null">coordinate = #{coordinate},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteDataCatalogById" parameterType="Long">
+        delete
+        from data_catalog
+        where id = #{id}
+    </delete>
+
+    <delete id="deleteDataCatalogByIds" parameterType="String">
+        delete from data_catalog where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="getTestData" resultType="java.util.HashMap">
+        select *
+        from data_catalog;
+    </select>
+    <select id="getedges" resultType="java.util.HashMap">
+        select *
+        from node_connection;
+    </select>
+</mapper>

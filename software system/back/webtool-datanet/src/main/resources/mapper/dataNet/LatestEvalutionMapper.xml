@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.webtool.datanet.mapper.LatestEvalutionMapper">
+
+    <resultMap type="LatestEvalution" id="LatestEvalutionResult">
+        <result property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="evaluateTime" column="evaluate_time"/>
+        <result property="url" column="url"/>
+        <result property="indicators" column="Indicators"/>
+        <result property="result" column="result"/>
+        <result property="score" column="score"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <sql id="selectLatestEvalutionVo">
+        select id,
+               user_id,
+               evaluate_time,
+               url,
+               indicators,
+               result,
+               score,
+               create_by,
+               create_time,
+               update_by,
+               update_time
+        from latest_evalution
+    </sql>
+
+    <select id="selectLatestEvalutionList" parameterType="LatestEvalution" resultMap="LatestEvalutionResult">
+        <include refid="selectLatestEvalutionVo"/>
+        <where>
+            <if test="userId != null ">and user_id = #{userId}</if>
+            <if test="evaluateTime != null ">and evaluate_time = #{evaluateTime}</if>
+            <if test="url != null  and url != ''">and url = #{url}</if>
+            <if test="indicators != null  and indicators != ''">and indicators = #{indicators}</if>
+            <if test="result != null  and result != ''">and result = #{result}</if>
+            <if test="score != null  and score != ''">and score = #{score}</if>
+        </where>
+        order by evaluate_time desc
+    </select>
+
+    <select id="selectLatestEvalutionById" parameterType="Long" resultMap="LatestEvalutionResult">
+        <include refid="selectLatestEvalutionVo"/>
+        where id = #{id}
+    </select>
+
+    <insert id="insertLatestEvalution" parameterType="LatestEvalution">
+        insert into latest_evalution
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">id,</if>
+            <if test="userId != null">user_id,</if>
+            <if test="evaluateTime != null">evaluate_time,</if>
+            <if test="url != null">url,</if>
+            <if test="indicators != null">indicators,</if>
+            <if test="result != null">result,</if>
+            <if test="score != null">score,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">#{id},</if>
+            <if test="userId != null">#{userId},</if>
+            <if test="evaluateTime != null">#{evaluateTime},</if>
+            <if test="url != null">#{url},</if>
+            <if test="indicators != null">#{indicators},</if>
+            <if test="result != null">#{result},</if>
+            <if test="score != null">#{score},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+        </trim>
+    </insert>
+
+    <update id="updateLatestEvalution" parameterType="LatestEvalution">
+        update latest_evalution
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="evaluateTime != null">evaluate_time = #{evaluateTime},</if>
+            <if test="url != null">url = #{url},</if>
+            <if test="indicators != null">indicators = #{indicators},</if>
+            <if test="result != null">result = #{result},</if>
+            <if test="score != null">score = #{score},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteLatestEvalutionById" parameterType="Long">
+        delete
+        from latest_evalution
+        where id = #{id}
+    </delete>
+
+    <delete id="deleteLatestEvalutionByIds" parameterType="String">
+        delete from latest_evalution where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

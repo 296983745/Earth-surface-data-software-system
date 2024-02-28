@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.webtool.datanet.mapper.DataEntityMapper">
+
+    <resultMap type="DataEntity" id="DataEntityResult">
+        <id property="entityId" column="entity_id"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="ancestors" column="ancestors"/>
+        <result property="name" column="name"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="dataOrigin" column="data_origin"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="parentName" column="parent_name"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+    <sql id="selectDataEntityVo">
+        select d.entity_id,
+               d.parent_id,
+               d.ancestors,
+               d.name,
+               d.order_num,
+               d.data_origin,
+               d.del_flag,
+               d.create_by,
+               d.create_time
+        from data_entity d
+    </sql>
+
+    <select id="selectDataEntityList" parameterType="SysDept" resultMap="DataEntityResult">
+        <include refid="selectDataEntityVo"/>
+        where d.del_flag = '0'
+        <if test="entityId != null and entityId != 0">
+            AND entity_id = #{entityId}
+        </if>
+        <if test="parentId != null and parentId != 0">
+            AND parent_id = #{parentId}
+        </if>
+        <if test="name != null and name != ''">
+            AND name like concat('%', #{name}, '%')
+        </if>
+        <!-- 数据范围过滤 -->
+        ${params.dataScope}
+        order by d.parent_id, d.order_num
+    </select>
+
+    <select id="selectDataEntityById" parameterType="Long" resultMap="DataEntityResult">
+        select d.entity_id,
+               d.parent_id,
+               d.ancestors,
+               d.name,
+               d.order_num,
+               d.data_origin,
+               (select name from data_entity where entity_id = d.parent_id) parent_name
+        from data_entity d
+        where d.entity_id = #{dataEntityId}
+    </select>
+
+
+    <select id="hasChildByEntityId" parameterType="Long" resultType="int">
+        select count(1)
+        from data_entity
+        where del_flag = '0'
+          and parent_id = #{entityId} limit 1
+    </select>
+
+    <select id="selectChildrenDataEntityById" parameterType="Long" resultMap="DataEntityResult">
+        select *
+        from data_entity
+        where find_in_set(#{entityId}, ancestors)
+    </select>
+
+
+    <select id="checkDataEntityNameUnique" resultMap="DataEntityResult">
+        <include refid="selectDataEntityVo"/>
+        where name=#{name} and parent_id = #{parentId} and del_flag = '0' limit 1
+    </select>
+
+    <insert id="insertDataEntity" parameterType="DataEntity">
+        insert into data_entity(
+        <if test="entityId != null and entityId != 0">entity_id,</if>
+        <if test="parentId != null and parentId != 0">parent_id,</if>
+        <if test="name != null and name != ''">name,</if>
+        <if test="ancestors != null and ancestors != ''">ancestors,</if>
+        <if test="orderNum != null">order_num,</if>
+        <if test="dataOrigin != null and dataOrigin != ''">data_origin,</if>
+        <if test="createBy != null and createBy != ''">create_by,</if>
+        create_time
+        )values(
+        <if test="entityId != null and entityId != 0">#{entity_id},</if>
+        <if test="parentId != null and parentId != 0">#{parentId},</if>
+        <if test="name != null and name != ''">#{name},</if>
+        <if test="ancestors != null and ancestors != ''">#{ancestors},</if>
+        <if test="orderNum != null">#{orderNum},</if>
+        <if test="dataOrigin != null and dataOrigin != ''">#{dataOrigin},</if>
+        <if test="createBy != null and createBy != ''">#{createBy},</if>
+        sysdate()
+        )
+    </insert>
+
+    <update id="updateDataEntity" parameterType="DataEntity">
+        update data_entity
+        <set>
+            <if test="parentId != null and parentId != 0">parent_id = #{parentId},</if>
+            <if test="name != null and name != ''">name = #{name},</if>
+            <if test="ancestors != null and ancestors != ''">ancestors = #{ancestors},</if>
+            <if test="orderNum != null">order_num = #{orderNum},</if>
+            <if test="dataOrigin != null and dataOrigin != ''">data_origin = #{dataOrigin},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+            update_time = sysdate()
+        </set>
+        where entity_id = #{entityId}
+    </update>
+
+    <update id="updateDataEntityChildren" parameterType="java.util.List">
+        update data_entity set ancestors =
+        <foreach collection="dataEntities" item="item" index="index"
+                 separator=" " open="case dept_id" close="end">
+            when #{item.entityId} then #{item.ancestors}
+        </foreach>
+        where entity_id in
+        <foreach collection="dataEntities" item="item" index="index"
+                 separator="," open="(" close=")">
+            #{item.entityId}
+        </foreach>
+    </update>
+
+
+    <delete id="deleteById" parameterType="Long">
+        update data_entity
+        set del_flag = '2'
+        where entity_id = #{entityId}
+    </delete>
+
+</mapper> 
