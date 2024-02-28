@@ -1,11 +1,6 @@
 ## 开发
 
 ```bash
-# 克隆项目
-git clone https://gitee.com/y_project/webtool-Vue
-
-# 进入项目目录
-cd webtool-ui
 
 # 安装依赖
 npm install
