@@ -1,0 +1,66 @@
+{"text1":"waterway transportation","text2":"waterway transportation","label":1}
+{"text1":"oasis city","text2":"oasis city","label":1}
+{"text1":"port city","text2":"harbor city","label":0.908536585}
+{"text1":"tropical rainforest climate","text2":"equatorial climate","label":0.87195122}
+{"text1":"city","text2":"cities and towns","label":0.859756098}
+{"text1":"transportation","text2":"communication and transportation","label":0.829268293}
+{"text1":"near shore environment","text2":"coastal environment","label":0.780487805}
+{"text1":"near shore environment","text2":"sublittoral environment","label":0.780487805}
+{"text1":"plateau permafrost","text2":"frozen soil","label":0.780487805}
+{"text1":"cold wave","text2":"cold air mass","label":0.774390244}
+{"text1":"iron and steel industry","text2":"metallurgical industry","label":0.725609756}
+{"text1":"geographical environment","text2":"environment","label":0.713414634}
+{"text1":"highway transportation","text2":"transportation","label":0.707317073}
+{"text1":"semi-arid climate","text2":"steppe climate","label":0.707317073}
+{"text1":"climate","text2":"weather","label":0.68902439}
+{"text1":"dairy Industry","text2":"food industry","label":0.682926829}
+{"text1":"cultural landscape","text2":"landscape","label":0.670731707}
+{"text1":"processing industry","text2":"light industry","label":0.664634146}
+{"text1":"cold wave","text2":"disastrous weather","label":0.652439024}
+{"text1":"coal industry","text2":"heavy industry","label":0.62804878}
+{"text1":"agricultural product processing industry","text2":"industry","label":0.609756098}
+{"text1":"gray desert soil","text2":"brown desert soil","label":0.603658537}
+{"text1":"marine environment","text2":"geographical environment","label":0.597560976}
+{"text1":"ecological environment","text2":"water environment","label":0.591463415}
+{"text1":"tropical soil","text2":"subtropical soil","label":0.573170732}
+{"text1":"alpine desert soil","text2":"subalpine soil","label":0.573170732}
+{"text1":"low productive soil","text2":"soil fertility","label":0.567073171}
+{"text1":"automobile industry","text2":"basic industry","label":0.512195122}
+{"text1":"social environment","text2":"external environment","label":0.475609756}
+{"text1":"alpine meadow soil","text2":"chestnut soil","label":0.463414634}
+{"text1":"power industry","text2":"mechanical industry","label":0.451219512}
+{"text1":"plateau climate","text2":"ecological environment","label":0.426829268}
+{"text1":"hydroclimate","text2":"agricultural environment","label":0.414634146}
+{"text1":"technique intensive city","text2":"small city","label":0.414634146}
+{"text1":"feed industry","text2":"sugar industry","label":0.390243902}
+{"text1":"fair weather","text2":"overcast sky","label":0.390243902}
+{"text1":"marine transportation","text2":"air transportation","label":0.37804878}
+{"text1":"arid climate","text2":"paleoclimate","label":0.37804878}
+{"text1":"environment","text2":"disastrous weather","label":0.365853659}
+{"text1":"Mediterranean climate","text2":"semi-arid environment","label":0.341463415}
+{"text1":"marine climate","text2":"cold air mass","label":0.317073171}
+{"text1":"desert soil","text2":"permafrost","label":0.317073171}
+{"text1":"gas industry","text2":"manufacturing industry","label":0.298780488}
+{"text1":"agroclimate","text2":"natural landscape","label":0.280487805}
+{"text1":"global environment","text2":"human landscape","label":0.280487805}
+{"text1":"tropical climate","text2":"coastal environment","label":0.274390244}
+{"text1":"petroleum industry","text2":"aluminum industry","label":0.25}
+{"text1":"textile industry","text2":"shipbuilding industry","label":0.25}
+{"text1":"computer industry","text2":"building material industry","label":0.231707317}
+{"text1":"monsoon climate","text2":"meadow cinnamon soil","label":0.213414634}
+{"text1":"climate","text2":"city","label":0.213414634}
+{"text1":"city","text2":"textile industry","label":0.201219512}
+{"text1":"regional climate","text2":"megalopolis","label":0.182926829}
+{"text1":"water environment","text2":"steppe landscape","label":0.182926829}
+{"text1":"temperate climate","text2":"superaqual landscape","label":0.170731707}
+{"text1":"quaternary climate","text2":"steppe landscape","label":0.164634146}
+{"text1":"humid climate","text2":"dust storm","label":0.158536585}
+{"text1":"glacial climate","text2":"cinnamon soil","label":0.140243902}
+{"text1":"marine environment","text2":"soil","label":0.109756098}
+{"text1":"semi-arid environment","text2":"subaqual landscape","label":0.103658537}
+{"text1":"ecoclimate","text2":"science city","label":0.054878049}
+{"text1":"Holocene climate","text2":"coastal transportation","label":0.036585366}
+{"text1":"marine climate","text2":"pipeline transportation","label":0.036585366}
+{"text1":"desert climate","text2":"inland water transportation","label":0.030487805}
+{"text1":"polar climate","text2":"mining industry","label":0.024390244}
+{"text1":"desert climate","text2":"labor intensive industry","label":0.006097561}

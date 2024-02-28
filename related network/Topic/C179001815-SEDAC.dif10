@@ -1,0 +1,1037 @@
+<?xml version="1.0" ?>
+<DIF xmlns="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:dif="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/ http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v10.2.xsd">
+	<Entry_ID>
+		<Short_Name>CIESIN_SEDAC_EPI_2006</Short_Name>
+		<Version>2006.00</Version>
+	</Entry_ID>
+	<Entry_Title>Pilot 2006 Environmental Performance Index (EPI)</Entry_Title>
+	<Dataset_Citation>
+		<Dataset_Creator>Yale Center for Environmental Law and Policy - YCELP - Yale University, Center for International Earth Science Information Network - CIESIN - Columbia University, World Economic Forum - WEF, and Joint Research Centre - JRC - European Commission</Dataset_Creator>
+		<Dataset_Title>Pilot 2006 Environmental Performance Index (EPI)</Dataset_Title>
+		<Dataset_Release_Date>2006-12-31T00:00:00.000Z</Dataset_Release_Date>
+		<Dataset_Release_Place>New Haven, CT</Dataset_Release_Place>
+		<Dataset_Publisher>Yale Center for Environmental Law and Policy (YCELP)/Yale University</Dataset_Publisher>
+		<Version>2006.00</Version>
+		<Persistent_Identifier>
+			<Type>DOI</Type>
+			<Identifier>10.7927/H44M92GX</Identifier>
+		</Persistent_Identifier>
+		<Online_Resource>https://doi.org/10.7927/H44M92GX</Online_Resource>
+	</Dataset_Citation>
+	<Personnel>
+		<Role>METADATA AUTHOR</Role>
+		<Contact_Group>
+			<Name>CIESIN METADATA ADMINISTRATION</Name>
+			<Address>
+				<Street_Address>CIESIN, Columbia University, 61 Route 9W, P.O. Box 1000</Street_Address>
+				<City>Palisades</City>
+				<State_Province>New York</State_Province>
+				<Postal_Code>10964</Postal_Code>
+				<Country>United States</Country>
+			</Address>
+			<Phone>
+				<Number>+1 845-365-8922</Number>
+				<Type>Fax</Type>
+			</Phone>
+			<Phone>
+				<Number>+1 845-365-8988</Number>
+				<Type>Telephone</Type>
+			</Phone>
+			<Email>metadata@ciesin.columbia.edu</Email>
+		</Contact_Group>
+	</Personnel>
+	<Science_Keywords>
+		<Category>EARTH SCIENCE</Category>
+		<Topic>HUMAN DIMENSIONS</Topic>
+		<Term>SUSTAINABILITY</Term>
+		<Variable_Level_1>ENVIRONMENTAL SUSTAINABILITY</Variable_Level_1>
+	</Science_Keywords>
+	<Platform>
+		<Type>Not provided</Type>
+		<Short_Name>MODELS</Short_Name>
+		<Long_Name>MODELS</Long_Name>
+		<Instrument>
+			<Short_Name>Computer</Short_Name>
+			<Long_Name>Computer</Long_Name>
+		</Instrument>
+	</Platform>
+	<Temporal_Coverage>
+		<Ends_At_Present_Flag>false</Ends_At_Present_Flag>
+		<Range_DateTime>
+			<Beginning_Date_Time>1994-01-01T00:00:00.000Z</Beginning_Date_Time>
+			<Ending_Date_Time>2006-12-31T00:00:00.000Z</Ending_Date_Time>
+		</Range_DateTime>
+	</Temporal_Coverage>
+	<Dataset_Progress>COMPLETE</Dataset_Progress>
+	<Spatial_Coverage>
+		<Spatial_Coverage_Type>Horizontal</Spatial_Coverage_Type>
+		<Granule_Spatial_Representation>CARTESIAN</Granule_Spatial_Representation>
+		<Geometry>
+			<Coordinate_System>CARTESIAN</Coordinate_System>
+			<Bounding_Rectangle>
+				<Southernmost_Latitude>-55.0</Southernmost_Latitude>
+				<Northernmost_Latitude>90.0</Northernmost_Latitude>
+				<Westernmost_Longitude>-180.0</Westernmost_Longitude>
+				<Easternmost_Longitude>180.0</Easternmost_Longitude>
+			</Bounding_Rectangle>
+		</Geometry>
+		<Spatial_Info>
+			<Spatial_Coverage_Type>Not provided</Spatial_Coverage_Type>
+		</Spatial_Info>
+	</Spatial_Coverage>
+	<Location>
+		<Location_Category>GEOGRAPHIC REGION</Location_Category>
+		<Location_Type>GLOBAL</Location_Type>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>NORTH AMERICA</Location_Type>
+		<Location_Subregion1>CANADA</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>SOUTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>ALBANIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>NORTHERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>ALGERIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>CENTRAL AFRICA</Location_Subregion1>
+		<Location_Subregion2>ANGOLA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>SOUTH AMERICA</Location_Type>
+		<Location_Subregion1>ARGENTINA</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>ARMENIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AUSTRALIA/NEW ZEALAND</Location_Type>
+		<Location_Subregion1>AUSTRALIA</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>WESTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>AUSTRIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>AZERBAIJAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHCENTRAL ASIA</Location_Subregion1>
+		<Location_Subregion2>BANGLADESH</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>WESTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>BELGIUM</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>BENIN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>SOUTH AMERICA</Location_Type>
+		<Location_Subregion1>BOLIVIA</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>SOUTH AMERICA</Location_Type>
+		<Location_Subregion1>BRAZIL</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>EASTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>BULGARIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>BURKINA FASO</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>EASTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>BURUNDI</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHEASTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>CAMBODIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>CENTRAL AFRICA</Location_Subregion1>
+		<Location_Subregion2>CAMEROON</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>CENTRAL AFRICA</Location_Subregion1>
+		<Location_Subregion2>CENTRAL AFRICAN REPUBLIC</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>CENTRAL AFRICA</Location_Subregion1>
+		<Location_Subregion2>CHAD</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>SOUTH AMERICA</Location_Type>
+		<Location_Subregion1>CHILE</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>SOUTH AMERICA</Location_Type>
+		<Location_Subregion1>COLOMBIA</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>NORTH AMERICA</Location_Type>
+		<Location_Subregion1>CENTRAL AMERICA</Location_Subregion1>
+		<Location_Subregion2>COSTA RICA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>COTE D'IVOIRE</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>ATLANTIC OCEAN</Location_Type>
+		<Location_Subregion1>NORTH ATLANTIC OCEAN</Location_Subregion1>
+		<Location_Subregion2>CARIBBEAN SEA</Location_Subregion2>
+		<Location_Subregion3>CUBA</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>ATLANTIC OCEAN</Location_Type>
+		<Location_Subregion1>NORTH ATLANTIC OCEAN</Location_Subregion1>
+		<Location_Subregion2>MEDITERRANEAN SEA</Location_Subregion2>
+		<Location_Subregion3>CYPRUS</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>NORTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>SCANDINAVIA</Location_Subregion2>
+		<Location_Subregion3>DENMARK</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>ATLANTIC OCEAN</Location_Type>
+		<Location_Subregion1>NORTH ATLANTIC OCEAN</Location_Subregion1>
+		<Location_Subregion2>CARIBBEAN SEA</Location_Subregion2>
+		<Location_Subregion3>DOMINICAN REPUBLIC</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>SOUTH AMERICA</Location_Type>
+		<Location_Subregion1>ECUADOR</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>NORTHERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>EGYPT</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>NORTH AMERICA</Location_Type>
+		<Location_Subregion1>CENTRAL AMERICA</Location_Subregion1>
+		<Location_Subregion2>EL SALVADOR</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>EASTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>ETHIOPIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>NORTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>SCANDINAVIA</Location_Subregion2>
+		<Location_Subregion3>FINLAND</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>WESTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>FRANCE</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>CENTRAL AFRICA</Location_Subregion1>
+		<Location_Subregion2>GABON</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>GAMBIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>GEORGIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>WESTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>GERMANY</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>GHANA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>SOUTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>GREECE</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>NORTH AMERICA</Location_Type>
+		<Location_Subregion1>CENTRAL AMERICA</Location_Subregion1>
+		<Location_Subregion2>GUATEMALA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>GUINEA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>GUINEA-BISSAU</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>ATLANTIC OCEAN</Location_Type>
+		<Location_Subregion1>NORTH ATLANTIC OCEAN</Location_Subregion1>
+		<Location_Subregion2>CARIBBEAN SEA</Location_Subregion2>
+		<Location_Subregion3>HAITI</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>NORTH AMERICA</Location_Type>
+		<Location_Subregion1>CENTRAL AMERICA</Location_Subregion1>
+		<Location_Subregion2>HONDURAS</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>EASTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>HUNGARY</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>NORTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>ICELAND</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHCENTRAL ASIA</Location_Subregion1>
+		<Location_Subregion2>INDIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHCENTRAL ASIA</Location_Subregion1>
+		<Location_Subregion2>IRAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>NORTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>BRITISH ISLES</Location_Subregion2>
+		<Location_Subregion3>IRELAND</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>MIDDLE EAST</Location_Subregion2>
+		<Location_Subregion3>ISRAEL</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>SOUTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>ITALY</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>ATLANTIC OCEAN</Location_Type>
+		<Location_Subregion1>NORTH ATLANTIC OCEAN</Location_Subregion1>
+		<Location_Subregion2>CARIBBEAN SEA</Location_Subregion2>
+		<Location_Subregion3>JAMAICA</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>EASTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>JAPAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>MIDDLE EAST</Location_Subregion2>
+		<Location_Subregion3>JORDAN</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHCENTRAL ASIA</Location_Subregion1>
+		<Location_Subregion2>KAZAKHSTAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>EASTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>KENYA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHCENTRAL ASIA</Location_Subregion1>
+		<Location_Subregion2>KYRGYZSTAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>MIDDLE EAST</Location_Subregion2>
+		<Location_Subregion3>LEBANON</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>LIBERIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>INDIAN OCEAN</Location_Type>
+		<Location_Subregion1>MADAGASCAR</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>EASTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>MALAWI</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>INDIAN OCEAN</Location_Type>
+		<Location_Subregion1>MALAYSIA</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>MALI</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>MAURITANIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>NORTH AMERICA</Location_Type>
+		<Location_Subregion1>MEXICO</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>EASTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>MOLDOVA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>EASTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>MONGOLIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>NORTHERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>MOROCCO</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>EASTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>MOZAMBIQUE</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>SOUTHERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>NAMIBIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHCENTRAL ASIA</Location_Subregion1>
+		<Location_Subregion2>NEPAL</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>WESTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>NETHERLANDS</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AUSTRALIA/NEW ZEALAND</Location_Type>
+		<Location_Subregion1>NEW ZEALAND</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>NORTH AMERICA</Location_Type>
+		<Location_Subregion1>CENTRAL AMERICA</Location_Subregion1>
+		<Location_Subregion2>NICARAGUA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>NIGER</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>NIGERIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>NORTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>SCANDINAVIA</Location_Subregion2>
+		<Location_Subregion3>NORWAY</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>MIDDLE EAST</Location_Subregion2>
+		<Location_Subregion3>OMAN</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHCENTRAL ASIA</Location_Subregion1>
+		<Location_Subregion2>PAKISTAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>NORTH AMERICA</Location_Type>
+		<Location_Subregion1>CENTRAL AMERICA</Location_Subregion1>
+		<Location_Subregion2>PANAMA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>PACIFIC OCEAN</Location_Type>
+		<Location_Subregion1>SOUTH PACIFIC OCEAN</Location_Subregion1>
+		<Location_Subregion2>MELANESIA</Location_Subregion2>
+		<Location_Subregion3>PAPUA NEW GUINEA</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>SOUTH AMERICA</Location_Type>
+		<Location_Subregion1>PARAGUAY</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>SOUTH AMERICA</Location_Type>
+		<Location_Subregion1>PERU</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>PACIFIC OCEAN</Location_Type>
+		<Location_Subregion1>WESTERN PACIFIC OCEAN</Location_Subregion1>
+		<Location_Subregion2>PHILIPPINES</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>EASTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>POLAND</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>WESTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>PORTUGAL</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>EASTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>ROMANIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>EASTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>RWANDA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>MIDDLE EAST</Location_Subregion2>
+		<Location_Subregion3>SAUDI ARABIA</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>SENEGAL</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>SIERRA LEONE</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>EASTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>SLOVAKIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>SOUTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>SLOVENIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>SOUTHERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>SOUTH AFRICA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>EASTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>SOUTH KOREA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>INDIAN OCEAN</Location_Type>
+		<Location_Subregion1>SRI LANKA</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>NORTHERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>SUDAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>SOUTH AMERICA</Location_Type>
+		<Location_Subregion1>SURINAME</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>NORTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>SCANDINAVIA</Location_Subregion2>
+		<Location_Subregion3>SWEDEN</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>WESTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>SWITZERLAND</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>EASTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>TAIWAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHCENTRAL ASIA</Location_Subregion1>
+		<Location_Subregion2>TAJIKISTAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>EASTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>TANZANIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHEASTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>THAILAND</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>WESTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>TOGO</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>ATLANTIC OCEAN</Location_Type>
+		<Location_Subregion1>NORTH ATLANTIC OCEAN</Location_Subregion1>
+		<Location_Subregion2>CARIBBEAN SEA</Location_Subregion2>
+		<Location_Subregion3>TRINIDAD AND TOBAGO</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>NORTHERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>TUNISIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>TURKEY</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHCENTRAL ASIA</Location_Subregion1>
+		<Location_Subregion2>TURKMENISTAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>EASTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>UGANDA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>EASTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>UKRAINE</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>MIDDLE EAST</Location_Subregion2>
+		<Location_Subregion3>UNITED ARAB EMIRATES</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>NORTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>BRITISH ISLES</Location_Subregion2>
+		<Location_Subregion3>UNITED KINGDOM</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>NORTH AMERICA</Location_Type>
+		<Location_Subregion1>UNITED STATES OF AMERICA</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHCENTRAL ASIA</Location_Subregion1>
+		<Location_Subregion2>UZBEKISTAN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>SOUTH AMERICA</Location_Type>
+		<Location_Subregion1>VENEZUELA</Location_Subregion1>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>SOUTHEASTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>VIETNAM</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>MIDDLE EAST</Location_Subregion2>
+		<Location_Subregion3>YEMEN</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>EASTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>ZAMBIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>EASTERN AFRICA</Location_Subregion1>
+		<Location_Subregion2>ZIMBABWE</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>CENTRAL AFRICA</Location_Subregion1>
+		<Location_Subregion2>CONGO</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>AFRICA</Location_Type>
+		<Location_Subregion1>CENTRAL AFRICA</Location_Subregion1>
+		<Location_Subregion2>CONGO, DEMOCRATIC REPUBLIC</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>EASTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>CHINA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>ASIA</Location_Type>
+		<Location_Subregion1>WESTERN ASIA</Location_Subregion1>
+		<Location_Subregion2>MIDDLE EAST</Location_Subregion2>
+		<Location_Subregion3>SYRIAN ARAB REPUBLIC</Location_Subregion3>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>EASTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>CZECHIA</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>EASTERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>RUSSIAN FEDERATION</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>CONTINENT</Location_Category>
+		<Location_Type>EUROPE</Location_Type>
+		<Location_Subregion1>SOUTHERN EUROPE</Location_Subregion1>
+		<Location_Subregion2>SPAIN</Location_Subregion2>
+	</Location>
+	<Location>
+		<Location_Category>OCEAN</Location_Category>
+		<Location_Type>INDIAN OCEAN</Location_Type>
+		<Location_Subregion1>INDONESIA</Location_Subregion1>
+	</Location>
+	<Project>
+		<Short_Name>EPI</Short_Name>
+		<Long_Name>Environmental Performance Index</Long_Name>
+	</Project>
+	<Access_Constraints>None</Access_Constraints>
+	<Use_Constraints>
+		<Description>Users are free to use, copy, distribute, transmit, and adapt the work for commercial and non-commercial purposes, without restriction, as long as clear attribution of the source is provided.</Description>
+	</Use_Constraints>
+	<Dataset_Language>English</Dataset_Language>
+	<Organization>
+		<Organization_Type>DISTRIBUTOR</Organization_Type>
+		<Organization_Name>
+			<Short_Name>SEDAC</Short_Name>
+			<Long_Name>Socioeconomic Data and Applications Center</Long_Name>
+		</Organization_Name>
+		<Organization_URL>https://sedac.ciesin.columbia.edu/</Organization_URL>
+		<Personnel>
+			<Role>DATA CENTER CONTACT</Role>
+			<Contact_Person>
+				<Last_Name>Not provided</Last_Name>
+			</Contact_Person>
+		</Personnel>
+	</Organization>
+	<Organization>
+		<Organization_Type>ARCHIVER</Organization_Type>
+		<Organization_Name>
+			<Short_Name>SEDAC</Short_Name>
+			<Long_Name>Socioeconomic Data and Applications Center</Long_Name>
+		</Organization_Name>
+		<Organization_URL>https://sedac.ciesin.columbia.edu/</Organization_URL>
+		<Personnel>
+			<Role>DATA CENTER CONTACT</Role>
+			<Contact_Person>
+				<Last_Name>Not provided</Last_Name>
+			</Contact_Person>
+		</Personnel>
+	</Organization>
+	<Distribution>
+		<Distribution_Format>Excel</Distribution_Format>
+		<Fees>0</Fees>
+	</Distribution>
+	<Distribution>
+		<Distribution_Format>PDF</Distribution_Format>
+		<Fees>0</Fees>
+	</Distribution>
+	<Distribution>
+		<Distribution_Format>PNG</Distribution_Format>
+		<Fees>0</Fees>
+	</Distribution>
+	<Reference>
+		<Author>Yale Center for Environmental Law and Policy - YCELP - Yale University, Center for International Earth Science Information Network - CIESIN - Columbia University, World Economic Forum - WEF, and Joint Research Centre - JRC - European Commission</Author>
+		<Publication_Date>2008-12-31T00:00:00.000Z</Publication_Date>
+		<Title>2008 Environmental Performance Index (EPI)</Title>
+		<Edition>2008.00</Edition>
+		<Publication_Place>New Haven, CT</Publication_Place>
+		<Publisher>Yale Center for Environmental Law and Policy (YCELP)/Yale University</Publisher>
+		<Persistent_Identifier>
+			<Type>DOI</Type>
+			<Identifier>10.7927/H4HT2M77</Identifier>
+		</Persistent_Identifier>
+	</Reference>
+	<Reference>
+		<Author>Yale Center for Environmental Law and Policy - YCELP - Yale University, Center for International Earth Science Information Network - CIESIN - Columbia University, World Economic Forum - WEF, and Joint Research Centre - JRC - European Commission</Author>
+		<Publication_Date>2010-12-31T00:00:00.000Z</Publication_Date>
+		<Title>2010 Environmental Performance Index (EPI)</Title>
+		<Edition>2010.00</Edition>
+		<Publication_Place>New Haven, CT</Publication_Place>
+		<Publisher>Yale Center for Environmental Law and Policy (YCELP)/Yale University</Publisher>
+		<Persistent_Identifier>
+			<Type>DOI</Type>
+			<Identifier>10.7927/H4D21VHT</Identifier>
+		</Persistent_Identifier>
+	</Reference>
+	<Reference>
+		<Author>Yale Center for Environmental Law and Policy - YCELP - Yale University, Center for International Earth Science Information Network - CIESIN - Columbia University, World Economic Forum - WEF, and Joint Research Centre - JRC - European Commission</Author>
+		<Publication_Date>2012-08-28T00:00:00.000Z</Publication_Date>
+		<Title>2012 Environmental Performance Index and Pilot Trend Environmental Performance Index</Title>
+		<Edition>2012.00</Edition>
+		<Publication_Place>New Haven, CT</Publication_Place>
+		<Publisher>Yale Center for Environmental Law and Policy (YCELP)/Yale University</Publisher>
+		<Persistent_Identifier>
+			<Type>DOI</Type>
+			<Identifier>10.7927/H48913SG</Identifier>
+		</Persistent_Identifier>
+	</Reference>
+	<Reference>
+		<Author>Yale Center for Environmental Law and Policy - YCELP - Yale University, Center for International Earth Science Information Network - CIESIN - Columbia University, and World Economic Forum - WEF</Author>
+		<Publication_Date>2014-04-17T00:00:00.000Z</Publication_Date>
+		<Title>2014 Environmental Performance Index (EPI)</Title>
+		<Edition>2014.00</Edition>
+		<Publication_Place>New Haven, CT</Publication_Place>
+		<Publisher>Yale Center for Environmental Law and Policy (YCELP)/Yale University</Publisher>
+		<Persistent_Identifier>
+			<Type>DOI</Type>
+			<Identifier>10.7927/H4416V05</Identifier>
+		</Persistent_Identifier>
+	</Reference>
+	<Reference>
+		<Author>Yale Center for Environmental Law and Policy - YCELP - Yale University, Yale Data-Driven Environmental Solutions Group - Yale University, Center for International Earth Science Information Network - CIESIN - Columbia University, and World Economic Forum - WEF</Author>
+		<Publication_Date>2016-06-23T00:00:00.000Z</Publication_Date>
+		<Title>2016 Environmental Performance Index (EPI)</Title>
+		<Edition>2016.00</Edition>
+		<Publication_Place>New Haven, CT</Publication_Place>
+		<Publisher>Yale Center for Environmental Law and Policy (YCELP)/Yale University</Publisher>
+		<Persistent_Identifier>
+			<Type>DOI</Type>
+			<Identifier>10.7927/H4FX77CS</Identifier>
+		</Persistent_Identifier>
+	</Reference>
+	<Reference>
+		<Author>Yale Center for Environmental Law and Policy - YCELP - Yale University, Yale Data-Driven Environmental Solutions Group - Yale University, Center for International Earth Science Information Network - CIESIN - Columbia University, and World Economic Forum - WEF</Author>
+		<Publication_Date>2018-10-04T00:00:00.000Z</Publication_Date>
+		<Title>2018 Environmental Performance Index (EPI)</Title>
+		<Edition>2018.00</Edition>
+		<Publication_Place>New Haven, CT</Publication_Place>
+		<Publisher>Yale Center for Environmental Law and Policy (YCELP)/Yale University</Publisher>
+		<Persistent_Identifier>
+			<Type>DOI</Type>
+			<Identifier>10.7927/H4X928CF</Identifier>
+		</Persistent_Identifier>
+	</Reference>
+	<Summary>
+		<Abstract>The Pilot 2006 Environmental Performance Index (EPI) centers on two broad environmental protection objectives: (1) reducing environmental stresses on human health, and (2) promoting ecosystem vitality and sound natural resource management. Derived from a careful review of the environmental literature, these twin goals mirror the priorities expressed by policymakers. Environmental health and ecosystem vitality are gauged using sixteen indicators tracked in six well-established policy categories: Environmental Health, Air Quality, Water Resources, Productive Natural Resources, Biodiversity and Habitat, and Sustainable Energy. The Pilot 2006 EPI utilizes a proximity-to-target methodology focused on a core set of environmental outcomes linked to policy goals for which every government should be held accountable. By identifying specific targets and measuring how close each country comes to them, the EPI provides a factual foundation for policy analysis and a context for evaluating performance. Issue-by-issue and aggregate rankings facilitate cross-country comparisons both globally and within relevant peer groups. The Pilot 2006 EPI is the result of collaboration among the Yale Center for Environmental Law and Policy (YCELP), Columbia University Center for International Earth Science Information Network (CIESIN), World Economic Forum (WEF), and the Joint Research Centre (JRC), European Commission.</Abstract>
+		<Purpose>To provide quantitative metrics for evaluating a country's environmental performance in different policy categories relative to clearly defined targets.</Purpose>
+	</Summary>
+	<Related_URL>
+		<URL_Content_Type>
+			<Type>GET RELATED VISUALIZATION</Type>
+		</URL_Content_Type>
+		<URL>https://sedac.ciesin.columbia.edu/downloads/maps/epi/epi-pilot-environmental-performance-index-2006/epi2006-overall-score-thumbnail.jpg</URL>
+		<Description>Sample browse graphic of the data set.</Description>
+	</Related_URL>
+	<Related_URL>
+		<URL_Content_Type>
+			<Type>GET DATA</Type>
+			<Subtype>DIRECT DOWNLOAD</Subtype>
+		</URL_Content_Type>
+		<URL>https://sedac.ciesin.columbia.edu/data/set/epi-pilot-environmental-performance-index-2006/data-download</URL>
+		<Description>Data Download Page</Description>
+	</Related_URL>
+	<Related_URL>
+		<URL_Content_Type>
+			<Type>GET RELATED VISUALIZATION</Type>
+			<Subtype>MAP</Subtype>
+		</URL_Content_Type>
+		<URL>https://sedac.ciesin.columbia.edu/data/set/epi-pilot-environmental-performance-index-2006/maps</URL>
+		<Description>Maps Download Page</Description>
+	</Related_URL>
+	<Related_URL>
+		<URL_Content_Type>
+			<Type>VIEW RELATED INFORMATION</Type>
+			<Subtype>GENERAL DOCUMENTATION</Subtype>
+		</URL_Content_Type>
+		<URL>https://sedac.ciesin.columbia.edu/data/set/epi-pilot-environmental-performance-index-2006</URL>
+		<Description>Data Set Overview Page</Description>
+	</Related_URL>
+	<IDN_Node>
+		<Short_Name>CIESIN_SEDAC_EPI_2006</Short_Name>
+	</IDN_Node>
+	<Metadata_Name>CEOS IDN DIF</Metadata_Name>
+	<Metadata_Version>VERSION 10.2</Metadata_Version>
+	<Metadata_Dates>
+		<Metadata_Creation>2013-02-07</Metadata_Creation>
+		<Metadata_Last_Revision>2023-03-24</Metadata_Last_Revision>
+		<Data_Creation>2006-12-31T00:00:00.000Z</Data_Creation>
+		<Data_Last_Revision>2006-12-31T00:00:00.000Z</Data_Last_Revision>
+	</Metadata_Dates>
+	<Product_Level_Id>2</Product_Level_Id>
+	<Collection_Data_Type>SCIENCE_QUALITY</Collection_Data_Type>
+</DIF>
